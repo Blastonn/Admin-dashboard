@@ -36,11 +36,14 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+h1{
+    text-decoration: underline;
+}
+
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr;
-    grid-template-rows: 1fr 50px 5fr;
-    min-height: 100vh;
+    grid-template-columns: 20% 57%;
+
 }
 
 
@@ -51,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 18px;
     background-color: #FFDCDC;
     grid-column: 1;
+    height: auto;
     grid-row: 1 / 4;
 }
 
@@ -114,44 +118,35 @@ input{
 
 .container-card{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    padding: 10px;
+
     justify-items: flex-start;
-    grid-row: 2;
-    grid-column: 2;
+
 }
 
 .card{
-    width: 30vw;
-    height: 200px;
-    padding: 20px;
     background-color: #FFD6BA;
+    padding: 25px;
     border-radius: 10px;
 
 }
 
 .anuncios-card{
-    display: grid;
-    grid-template-rows: 55px 0.8fr 1fr;
-    gap:10px;
+    grid-column: 3;
+    grid-row: 2 / 4;
+    padding: 15px;
 
+    height: 100%;
+    font-size: small;
 }
 
-.anuncios-card .card{
-    width: 20vw;
-    height: 200px;
-    overflow: auto;
-    
-}
-
-.card.trending{
-    height: min(60vh, 430px);
-
-}
 
 
 h3{
     align-self: center;
-    grid-column: 1 / -1;
+    text-align: justify;
+    padding: 10px;
+    grid-row: 1;
 }
