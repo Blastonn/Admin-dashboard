@@ -62,7 +62,6 @@ section{
 }
 
 h2{
-
     font-size: 1.5rem;
 }
 
@@ -112,7 +111,6 @@ input{
 }
 .menu{
     display: grid;
-    grid-template-rows: 0.7fr 0.5fr 1fr;
     grid-template-columns: 2fr 1fr ;
 }
 
@@ -221,37 +219,55 @@ h1 > img{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     padding: 10px;
-    grid-column: 2;
-    grid-row: 2 / 3;
-
 }
 
 .card{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     background-color: #FFD6BA;
     padding: 25px;
     border-radius: 8px;
     box-shadow: -12px 0px 0px 0px #FFB687;    ;
 }
+.card p {
+    grid-column: 1 / 4;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+
 
 .anuncios-card{
+    display: grid;
     grid-column: 3;
     grid-row: 2 / 4;
-    padding: 20px;
-    font-size: small;
+    padding: 25px;
+    font-size: 0.7rem;
+    align-items: baseline;
+
+}
+
+.anuncios-card p:not(:last-child){
+    display: grid;
+    padding-bottom: 16px;
+    border-bottom: 1px solid black;
 }
 
 
 
-h3{
-    align-self: center;
-    text-align: justify;
-    text-decoration: line-through;
-    padding: 10px;
-    grid-row: 1;
+.anuncios-card p{
+    margin-bottom: 16px;
 }
 
 .menu-opcoes > li{
     display: inline-flex;
+    
     gap: 1rem; 
 }
 
@@ -265,3 +281,4 @@ img{
     width: clamp(0.4rem, 1.2rem, 3rem);
 
 }
+
