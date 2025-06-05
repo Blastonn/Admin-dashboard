@@ -10,10 +10,16 @@
       interpolate-size: allow-keywords;
     }
 }
+@font-face {
+    font-family: roboto-regular;
+    src: url(fonts/Roboto-Regular.woff2);
+    font-weight: normal;
+}
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: white;
+    font-family: roboto-regular;
     
 }
 img, picture, video, canvas, svg {
@@ -63,6 +69,7 @@ section{
 
 h2{
     font-size: 1.5rem;
+    font-family: roboto-regular;
 }
 
 
@@ -151,7 +158,7 @@ input{
     grid-column: 4;
     align-self: center;
     font-weight: bolder;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 
@@ -232,6 +239,7 @@ h1 > img{
 }
 .card p {
     grid-column: 1 / 4;
+    color: rgb(56, 55, 55);
 }
 .icons{
     display: flex;
@@ -250,7 +258,6 @@ h1 > img{
     padding: 25px;
     font-size: 0.7rem;
     align-items: baseline;
-
 }
 
 .anuncios-card p:not(:last-child){
