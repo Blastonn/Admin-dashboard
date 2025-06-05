@@ -250,7 +250,6 @@ h1 > img{
     grid-row: 3;
 }
 
-
 .anuncios-card{
     display: grid;
     grid-column: 3;
@@ -259,6 +258,7 @@ h1 > img{
     font-size: 0.7rem;
     align-items: baseline;
 }
+
 
 .anuncios-card p:not(:last-child){
     display: grid;
